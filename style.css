@@ -1,0 +1,421 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+body
+{
+  color:white;
+  background-color: black;
+}
+.container
+{
+  width:100%;
+  height:100vh;
+  position: relative;
+}
+
+.header
+{
+  color:white;
+  width:100%;
+  height: 100vh;
+  background:linear-gradient(360deg, rgba(0, 0, 0, 0.8500) 3.000%, rgba(0, 0, 0, 0.8465) 11.08%, rgba(0, 0, 0, 0.8361) 19.17%, rgba(0, 0, 0, 0.8187) 27.25%, rgba(0, 0, 0, 0.7944) 35.33%, rgba(0, 0, 0, 0.7632) 43.42%, rgba(0, 0, 0, 0.7250) 51.50%, rgba(0, 0, 0, 0.6868) 59.58%, rgba(0, 0, 0, 0.6556) 67.67%, rgba(0, 0, 0, 0.6313) 75.75%, rgba(0, 0, 0, 0.6139) 83.83%, rgba(0, 0, 0, 0.6035) 91.92%, rgba(0, 0, 0, 0.6000) 100.0%),url(images/hero.jpeg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.logo
+{
+  width:150px;
+}
+.header-content
+{
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  transition: ease-out 0.8s;
+}
+
+.header-content h1
+{
+  font-size: 60px;
+  text-align: center;
+  width:650px;
+}
+
+.header-content p
+{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.header-nav
+{
+  transition: ease 1s;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:2% 8%;
+}
+
+.btn
+{
+  padding:8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  color:white;
+}
+
+.language
+{
+  display: flex;
+  border: 1px solid lightgray;
+  justify-content: center;
+  align-items: center;
+  padding:8px 16px;
+  gap: 6px;
+  border-radius: 6px;
+}
+.en-btn
+{
+  background-color: transparent;
+  color:White; 
+  border: none;
+ 
+}
+.icon
+{
+  width:20px;
+  height: 20px;
+}
+.nav-btn
+{
+  display: flex;
+  gap:15px;
+}
+
+.btn-sign
+{
+  font-weight: bold;
+  background-color: red;
+}
+
+.input
+{
+  border:1px solid lightgray;
+  background-color: transparent;
+  margin:25px 0;
+  padding:18px;
+  width:250px;
+  border-radius: 6px;
+}
+::placeholder
+{
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.getbtn
+{
+  margin-left: 5px;
+  font-size: 18px;
+  padding:18px;
+  font-family: sans-serif;
+}
+
+.getbtn::after
+{
+  content: '';
+  background-image: url(images/caret-right.svg);
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  background-position: center center;
+  vertical-align: middle;
+  margin-left:8px;
+  color:white;
+}
+
+section
+{
+  border: 6px solid rgb(41, 40, 40);
+}
+
+.main1
+{
+  padding:5% 8%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap:100px;
+}
+
+.main1-right h1
+{
+  font-size: 42px;
+  width:350px;
+  margin-bottom: 10px;
+}
+
+.main1-right p
+{
+  font-size: 24px;
+}
+
+.main1-left
+{
+  display: flex;
+
+}
+.tvimg
+{
+  width:450px;
+}
+.tv-img
+{
+  position: relative;
+  z-index: 100;
+}
+
+.tv-video
+{
+  position: absolute;
+  top:-25px;
+  left:60px;
+  z-index:-100;
+  
+}
+
+.bg-video
+{
+  width:350px;
+  height: 375px;
+}
+
+/* New feature in Netflix */
+.card-container
+{
+  padding:2% 6%;
+}
+.card
+{
+  background-image: linear-gradient(to bottom, rgba(9, 0, 61, 0.859),rgba(9, 0, 61, 0.859),rgba(9, 0, 61, 0.859), rgba(79, 1, 1, 0.568));
+  width: 230px;
+  height:200px;
+  border-radius: 12px;
+  padding:18px 30px 80px 18px;
+  position: relative;
+}
+.card h1
+{
+  font-size: 28px;
+}
+.card-logo
+{
+  position: absolute;
+  bottom:0;
+  right:0;
+  margin:5px;
+}
+.card-img
+{
+  width:80px;
+}
+.new-feature
+{
+  text-align: center;
+  margin:20px 0;
+}
+.card-container
+{
+  display: flex;
+  justify-content: center;
+  gap:15px;
+  flex-wrap: wrap;
+  padding:5% 0;
+}
+/* Card container Ends */
+/* Frequent asked question */
+.faq
+{
+  padding:10px 12%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.faq h2
+{
+  font-weight:500;
+  font-size:40px;
+}
+
+.accordion
+{
+  margin:60px auto;
+  width:100%;
+  max-width:750px;
+}
+
+.accordion li
+{
+  list-style: none;
+  width:100%;
+  padding:5px;
+}
+
+.accordion li label
+{
+  display: flex;
+  align-items: center;
+  padding:20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+label::after
+{
+  content:"+";
+  font-size: 34px;
+  position: absolute;
+  right:20px;
+  transition: transform 0.5s;
+}
+
+input[type="radio"]
+{
+  display:none;
+}
+
+.accordion .content
+{
+  background: #303030;
+  text-align: left;
+  padding:0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s,padding 0.5s ;
+}
+
+.faq .email-signup
+{
+  max-width:600px;
+  margin:20px auto 60px;
+}
+
+.faq small
+{
+  font-size:13px; 
+}
+/* footer */
+
+.footer
+{
+  padding:50px 15% 10px;
+  border-top:6px  solid #333;
+  color:#777;
+}
+
+.footer h2
+{
+  font-size:18px;
+  font-weight:400;
+  margin-bottom:30px;
+}
+
+.footer .col
+{
+  flex-basis:25%;
+  flex-grow:1;
+  margin-bottom:20px;
+}
+
+.footer .col a
+{
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer .row
+{
+  display: flex;
+  align-items:flex-start;
+  padding:10px 0;
+}
+
+.footer .language-btn
+{
+  margin-bottom: 15px;
+  background-color: transparent;
+  color:white;
+  padding:10px 20px;
+  border-radius:6px ;
+  border: 1px solid lightgray;
+}
+
+.copyright-text
+{
+  font-size:14px;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+.fs24
+{
+  font-size: 24px;
+  color:red;
+}
+
+/* MEDIA Queries */
+
+@media screen and (max-width:990px) {
+  .header-content
+  {
+    padding:30px 0;
+  }
+  .header-content h1
+  {
+    font-size: 30px;
+  }
+  .main1
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main1-right
+  {
+    padding:10px;
+    text-align: center;
+  }
+  .main1-right h1
+  {
+    font-size:48px;
+    width:100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .main-right p
+  {
+    font-size:24px;
+  } 
+}
+
+
+
+ 
