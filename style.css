@@ -47,7 +47,7 @@ body
 
 .header-content h1
 {
-  font-size: 60px;
+  font-size: 6vh;
   text-align: center;
   width:650px;
 }
@@ -108,7 +108,7 @@ body
 .btn-sign
 {
   font-weight: bold;
-  background-color: red;
+  background-color: rgb(246, 5, 5);
 }
 
 .input
